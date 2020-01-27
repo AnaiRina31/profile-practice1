@@ -1,0 +1,195 @@
+@charset "utf-8";
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  font-size: 18px;
+  color: #333;
+}
+li{
+  list-style-type: none;
+}
+
+/* ヘッダー */
+header{
+  background-color: #EA5A52;
+  color: #fff;
+  height: 90px;
+  overflow: hidden;
+}
+.header-logo{
+  font-size: 36px;
+  float: left;
+  padding: 20px 40px;
+}
+.header-list li{
+  float: left;
+}
+.header-list a{
+  line-height: 90px;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 0 30px;
+}
+.header-list a:hover{
+  background-color: rgb(243, 133, 127);
+}
+/* ヘッダー終わり */
+
+/* main */
+.main{
+  padding: 100px 80px;
+}
+/* main終わり */
+
+/* copy-container */
+.copy-container{
+  padding: 90px 0;
+}
+.copy-container h1{
+  font-size: 180px;
+  letter-spacing: 5px;
+}
+.copy-container h2{
+  font-size: 60px;
+  padding-left: 10px;
+}
+/* copy-container 終わり */
+
+/* about */
+.about{
+  padding-top: 100px;
+}
+.section-title{
+  font-size: 28px;
+  border-bottom: 3px dashed rgb(243, 133, 127);
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+}
+.section-title span{
+  color: #EA5A52;
+}
+.profile{
+  overflow: hidden;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.profile img{
+  width: 200px;
+  border: 5px solid #EA5A52;
+  border-radius: 50%;
+  float: left;
+  margin-right: 100px;
+}
+.profile-txt{
+  width: 700px;
+}
+.profile-txt p{
+  margin-top: 10px;
+}
+/* about終わり */
+
+/* skill */
+.my-skills{
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+.skills{
+  width: 650px;
+  margin: 0 auto;
+}
+.skill{
+  float: left;
+  margin-right: 45px;
+}
+.icon-big{
+  font-size: 11em;
+}
+.skill p{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.hc{
+  color: rgb(0, 182, 97);
+}
+.swift{
+  color: orange;
+}
+.js{
+  color: rgb(74, 74, 199);
+}
+/* skill終わり */
+
+/* contact */
+form{
+  padding-left: 50px;
+}
+form p{
+  margin-bottom: 10px;
+}
+input, textarea{
+  width: 400px;
+  margin-bottom: 30px;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+.submit-btn{
+  background-color: #EA5A52;
+  color: #fff;
+  border-radius: 3px;
+}
+.submit-btn:hover{
+  background-color: rgb(243, 133, 127);
+  color: #fff;
+  border-radius: 3px;
+}
+/* contact終わり */
+
+/* フッター */
+footer{
+  background-color: #EA5A52;
+  color: #fff;
+  overflow: hidden;
+  height: 200px;
+  padding: 40px;
+}
+.footer-logo{
+  float: left;
+  font-size: 32px;
+}
+.footer-list{
+  float: right;
+}
+.footer-list li{
+  margin-bottom: 20px;
+}
+.footer-list a{
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer-list a:hover{
+  text-decoration: underline;
+}
+
+/* h2のタイピング風アニメーション */
+@keyframes typing {
+	from { width: 0; }
+}
+@keyframes cursor {
+	50% { border-right-color: transparent; }
+}
+.anime-type {
+	width: 10.5ch;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: .05em solid;  /*点滅縦線*/
+	animation: typing 2s steps(20), /*2sで20歩進む*/
+	cursor 1s steps(1) infinite;
+}
